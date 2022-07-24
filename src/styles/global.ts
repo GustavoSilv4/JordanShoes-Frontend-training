@@ -8,12 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body{
-        /* background-color: ; */
+        background-color: ${(props) => props.theme.white};
     }
 
     body, input, button, textarea {
-        /* font-family: ;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 400;
-        font-size: 1rem; */
+        font-size: 1rem;
     }
 `
