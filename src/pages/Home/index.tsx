@@ -1,3 +1,12 @@
+import forceGreen from '../../assets/shoes/air-jordan-1.png'
+import forcePurpleLight from '../../assets/shoes/air-jordan-2.png'
+import forcePurple from '../../assets/shoes/air-jordan-3.png'
+import forceGray from '../../assets/shoes/air-jordan-4.png'
+import forcePink from '../../assets/shoes/air-jordan-5.png'
+import forceOrange from '../../assets/shoes/air-jordan-8.png'
+import forceWhite from '../../assets/shoes/air-jordan-6.png'
+import forceBlack from '../../assets/shoes/air-jordan-7.png'
+
 import { Card } from '../../components/Card'
 import {
   Apresentation,
@@ -37,14 +46,14 @@ export function Home() {
           </span>
         </TitleMain>
         <ShowCase>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <Card image={forceGreen} />
+          <Card image={forcePurpleLight} />
+          <Card image={forcePurple} />
+          <Card image={forceGray} />
+          <Card image={forcePink} />
+          <Card image={forceOrange} />
+          <Card image={forceWhite} />
+          <Card image={forceBlack} />
         </ShowCase>
       </ContentMain>
       <Footer>Todos os direitos reservados.</Footer>

@@ -1,6 +1,10 @@
-import image from '../../assets/air-jordan-1-green.png'
 import { CardContainer } from './styles'
-export function Card() {
+
+interface CardProps {
+  image: string
+}
+
+export function Card({ image }: CardProps) {
   return (
     <CardContainer>
       <img src={image} alt="" />
