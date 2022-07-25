@@ -1,4 +1,5 @@
 import image from '../../assets/apresentation.png'
+import imagemedia from '../../assets/apresentation-768.png'
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
@@ -33,11 +34,12 @@ export const HeaderBottom = styled.div`
 `
 
 export const Apresentation = styled.div`
-  height: 23.625rem;
+  height: 23rem;
   position: relative;
   background-image: url(${image});
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
   display: flex;
   flex-direction: column;
@@ -72,7 +74,28 @@ export const Apresentation = styled.div`
     bottom: 0;
     background-color: rgba(24, 24, 24, 0.5);
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    background-image: url(${imagemedia});
+    background-size: cover;
+
+    > h2,
+    h3 {
+      width: 22.31rem;
+      margin-left: 1.25rem;
+      margin-right: 2.75rem;
+    }
+
+    > h2 {
+      font-size: 1.75rem;
+    }
+    > h3 {
+      font-size: 1rem;
+    }
+  }
 `
+
 export const ContentMain = styled.main`
   display: flex;
   flex-direction: column;
@@ -104,6 +127,18 @@ export const ShowCase = styled.div`
   grid-template-columns: repeat(4, 1fr);
   column-gap: 0.75rem;
   row-gap: 3.125rem;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 1030px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 export const Footer = styled.footer`
   text-align: center;
